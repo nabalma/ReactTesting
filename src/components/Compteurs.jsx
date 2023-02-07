@@ -18,13 +18,14 @@ const Compteurs = () => {
 
   return (
     <div className="container">
+        <div className='mt-3 w-50 mx-auto text-center fw-bold fs-5' style={{fontFamily:'Arial',color:"#020E84"}}>JEST TESTING COMPONENT </div>
          <div className="mt-3 w-25 mx-auto">
             <div className="card" style={{width:'18rem'}}>
             <div className="card-header">
                      <img src={Jest} className="card-img-top" alt="..."/>
                 </div>
-                <div className="card-body">
-                    <p className="card-text fw-bold text-center" style={{fontSize:"10rem"}}>{valeur}</p>
+                <div className="card-body bg-dark">
+                    <p className="card-text fw-bold text-center" style={{fontSize:"10rem",color:"#ffff"}}>{valeur}</p>
                 </div>
                
                 <div className="bg-light d-flex justify-content-center card-body">
