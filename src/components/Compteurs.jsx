@@ -18,9 +18,9 @@ const Compteurs = () => {
 
   return (
     <div className="container">
-        <div className='mt-3 w-50 mx-auto text-center fw-bold fs-5' style={{fontFamily:'Arial',color:"#020E84"}}>JEST TESTING COMPONENT </div>
+        <div className='mt-3 w-25 mx-auto text-center fw-bold fs-5 bg-dark rounded-pill' style={{fontFamily:'Arial',color:"#ffff"}}>JEST TESTING COMPONENT </div>
          <div className="mt-3 w-25 mx-auto">
-            <div className="card" style={{width:'18rem'}}>
+            <div className="card" style={{width:'20rem'}}>
             <div className="card-header">
                      <img src={Jest} className="card-img-top" alt="..."/>
                 </div>
@@ -29,8 +29,8 @@ const Compteurs = () => {
                 </div>
                
                 <div className="bg-light d-flex justify-content-center card-body">
-                    <button onClick={onReset}  className='me-1 btn btn-outline-danger'>Reset</button>  
-                   <button onClick={onIncrement}  className='ms-1 btn btn-outline-dark'>Increment</button>  
+                    <button onClick={onReset}  className='me-1 btn btn-danger'>Reset</button>  
+                   <button onClick={onIncrement}  className='ms-1 btn btn-dark'>Increment</button>  
                    
                 </div>
             </div>                
