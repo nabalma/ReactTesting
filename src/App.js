@@ -3,7 +3,7 @@ import Compteur from "./components/Compteurs"
 
 const App = () => {
   return (
-    <div>
+    <div data-testid="app">
       <Compteur/>
     </div>
   )

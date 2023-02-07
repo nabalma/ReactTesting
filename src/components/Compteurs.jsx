@@ -25,7 +25,7 @@ const Compteurs = () => {
                      <img src={Jest} className="card-img-top" alt="..."/>
                 </div>
                 <div className="card-body bg-dark">
-                    <p className="card-text fw-bold text-center" style={{fontSize:"10rem",color:"#ffff"}}>{valeur}</p>
+                    <p  className="card-text fw-bold text-center" style={{fontSize:"10rem",color:"#ffff"}} data-testid="valeur">{valeur}</p>
                 </div>
                
                 <div className="bg-light d-flex justify-content-center card-body">

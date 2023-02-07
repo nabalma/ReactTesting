@@ -1,8 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import Compteurs from "./components/Compteurs"
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe(App,()=>{
+  it("Counter displays 0 as initial value", ()=>{
+      const {getByTestId} = render(<App/>)
+      const countValue = getByTestId("app");
+      expect(countValue.childNodes.length).toBe(1);
+  })
+
+})
