@@ -15,10 +15,14 @@ const Compteurs = () => {
         setValeur(0)
     }
 
+    const onDecrement=()=>{       
+        setValeur(valeur-1)
+    }
+
 
   return (
     <div className="container">
-        <div className='mt-3 w-25 mx-auto text-center fw-bold fs-5 bg-dark rounded-pill' style={{fontFamily:'Arial',color:"#ffff"}}>JEST TESTING COMPONENT </div>
+        <div className='mt-3 w-25 mx-auto text-center fw-bold fs-5 bg-dark rounded-pill' style={{fontFamily:'Arial',color:"#ffff"}}><span className='text-danger'>JEST</span> COMPONENT TESTING </div>
          <div className="mt-3 w-25 mx-auto">
             <div className="card" style={{width:'20rem'}}>
             <div className="card-header">
@@ -29,7 +33,8 @@ const Compteurs = () => {
                 </div>
                
                 <div className="bg-light d-flex justify-content-center card-body">
-                    <button onClick={onReset}  className='me-1 btn btn-danger'>Reset</button>  
+                <button onClick={onDecrement}  className='ms-1 btn btn-secondary me-1'>Decrement</button>  
+                    <button onClick={onReset}  className='ms-1 btn btn-danger me-1'>Reset</button>  
                    <button onClick={onIncrement}  className='ms-1 btn btn-dark'>Increment</button>  
                    
                 </div>
